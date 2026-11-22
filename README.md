@@ -1,5 +1,7 @@
 # RAGA
 
+[![tests](https://github.com/RobertReed1412/RAGA/actions/workflows/tests.yml/badge.svg)](https://github.com/RobertReed1412/RAGA/actions/workflows/tests.yml)
+
 **Open Claude Code in one click, and make it learn from every session.**
 
 RAGA is two things in one small, dependency-free Python repo:
@@ -12,7 +14,7 @@ RAGA is two things in one small, dependency-free Python repo:
    helps, gets a second opinion from an **LLM council** built to disagree, and exports everything as
    fine-tuning data.
 
-<!-- GIF: launcher → button → Claude Code opens. Record with ScreenToGif (Windows) or Kap (Mac). -->
+<img src="docs/launcher.png" alt="The RAGA launcher: a project folder picker and two buttons, Claude Code and Claude Code + Chrome" width="420">
 
 ---
 
@@ -29,6 +31,7 @@ Needs Python 3.9+. Everything uses the standard library, so there's nothing to `
 
 ## Use the launcher
 
+**Double-click `RAGA.pyw`** (Windows), or run:
 ```bash
 python raga.py
 ```
