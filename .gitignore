@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+# exports and local data never belong in the repo (they can hold personal lessons)
+raga-export/
+.raga/
+.env*
