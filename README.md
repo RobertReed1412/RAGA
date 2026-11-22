@@ -27,7 +27,7 @@ python raga.py demo                          # the whole learning loop on made-u
 python -m unittest discover -s tests -v      # 29 tests, under a second
 ```
 
-Needs Python 3.9+. Everything uses the standard library, so there's nothing to `pip install`.
+Needs Python 3.10+. Everything uses the standard library, so there's nothing to `pip install`.
 
 ## Use the launcher
 
@@ -52,7 +52,7 @@ The status line at the bottom says whether Claude Code is installed and logged i
 
 | What | Result | How to reproduce |
 |---|---|---|
-| Tests | 29 pass on Windows 11 (Python 3.14); CI runs them on Windows, macOS and Linux | `python -m unittest discover -s tests` |
+| Tests | 29 pass on Windows 11 (Python 3.14); CI runs them on Windows, macOS and Linux with Python 3.10 and 3.13 | `python -m unittest discover -s tests` |
 | Do the tests catch bugs? | 3 safety checks were broken on purpose: redaction, AppleScript escaping, "no invented decisions". 4 tests failed; the restored code passes. | edit one, rerun |
 | Live A/B eval, lesson `rerun-failed-only`, real Claude, 2 cases | **Run 1:** without 0.50 → with 0.75 (**+0.25**). **Run 2:** 0.75 → 0.75 (**+0.00**). | `python raga.py eval --live` |
 | The demo's eval | +0.83, but **the demo uses a scripted model**: it shows the pipeline works, not that the lesson helps | `python raga.py demo` |

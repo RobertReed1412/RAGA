@@ -8,7 +8,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-        python: ["3.9", "3.13"]
+        python: ["3.10", "3.13"]   # 3.9 is end-of-life; GitHub's Ubuntu 26.04 runners no longer ship it
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
